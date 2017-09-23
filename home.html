@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+    <title>Magy's Guitar Lessons</title>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
+    <style>
+	    body {
+		    background-image: url("fundal.jpg");
+			background-repeat:no-repeat;
+            background-size: 100%;
+		}
+		#gri {
+		    position: absolute;
+			top: 0;
+			left: 0;
+			border-bottom: solid 1px;
+			border-bottom-color: rgba(255, 255, 255, .1);
+		}
+		#rosu {
+		    position: absolute;
+			top: 0;
+			right: 0;
+			-webkit-filter: brightness(95%)
+		}
+		#rosu:hover {
+		    -webkit-filter: brightness(100%)
+			}
+		#facebook {
+			-webkit-filter: invert(92%);
+		    position: absolute;
+			top: 10px;
+			right: 0.9%;
+		}
+		#facebook:hover {
+		    -webkit-filter: invert(100%);
+		}
+		#youtube {
+			-webkit-filter: invert(92%);
+		    position: absolute;
+			top: 14px;
+			right: 4.3%;
+		}
+		#youtube:hover {
+		    -webkit-filter: invert(100%);
+		}
+		#guitar {
+			-webkit-filter: invert(92%);
+		    position: absolute;
+			top: 10px;
+			left: 1%;
+		}
+		#guitar:hover {
+		    -webkit-filter: invert(100%);
+		}
+		#pick {
+			-webkit-filter: invert(92%);
+		    position: absolute;
+			top: 15px;
+			left: 23%;
+			transform: rotate(-45deg);
+		}
+		#pick:hover {
+		    -webkit-filter: invert(100%);
+			transform: rotate(-45deg);
+		}
+		#pick1 {
+			-webkit-filter: invert(92%);
+		    position: absolute;
+			top: 15px;
+			left: 44%;
+			transform: rotate(-45deg);
+		}
+		#pick1:hover {
+		    -webkit-filter: invert(100%);
+			transform: rotate(-45deg);
+		}
+		#pick2 {
+			-webkit-filter: invert(92%);
+		    position: absolute;
+			top: 15px;
+			left: 63%;
+			transform: rotate(-45deg);
+		}
+		#pick2:hover {
+		    -webkit-filter: invert(100%);
+			transform: rotate(-45deg);
+		}
+		ul {   
+			list-style-type:none;
+		}
+		li {
+		    float: left;
+		}
+		li a {
+		    text-decoration: none;
+			z-index: 100;
+            position: absolute;
+			padding-bottom: 17px;
+		}
+		#home a {
+		    color: #B32134;
+		}
+		#home {
+		    padding-left: 10%;
+		}
+		#despre {
+		    padding-left: 30%;
+		}
+		#galerie {
+		    padding-left: 50%;
+		}
+		#contact {
+		    padding-left: 70%;
+		}
+		li a {
+		    color: white;
+			font-family: 'Ubuntu';
+			transition: all 0.2s;
+			}
+		li a:hover {
+		    color: #B32134;
+			}
+		#titlu {
+		    color: white;
+			font-family: Ubuntu;
+			position: absolute;
+			top: 200px;
+			left: 26%;
+			font-size: 550%;
+			border: solid 4px #fdffd3;
+			padding-left: 15px;
+			padding-right: 15px;
+			border-radius: 10px;
+			background: rgba(32, 32, 32, .6);
+			-webkit-transition: all 1s linear;
+            -o-transition: all 1s linear;
+            -ms-transition: all 1s linear;
+            -moz-transition: all 1s linear;
+            transition: all 1s linear;
+			text-shadow: 4px 4px 4px #000000;
+		}
+		#titlu:hover {
+		    background: rgba(32, 32, 32, .8);
+			cursor: default;
+		}
+		#sub-titlu {
+		    opacity: 0;
+		    color: white;
+			font-family: Ubuntu;
+			position: absolute;
+			top: 390px;
+			left: 34%;
+			font-size: 150%;
+			-webkit-transition: all 1s linear;
+            -o-transition: all 1s linear;
+            -ms-transition: all 1s linear;
+            -moz-transition: all 1s linear;
+            transition: all 1s linear;
+			text-shadow: 4px 4px 4px #000000;
+		}
+		.titlu:hover #sub-titlu {
+		    opacity: 1;
+            -webkit-transition: all 1s linear;
+            -o-transition: all 1s linear;
+            -ms-transition: all 1s linear;
+            -moz-transition: all 1s linear;
+            transition: all 1s linear;
+			cursor: default;
+		}
+		#quote {
+		    font-family: Ubuntu;
+			font-size: 150%;
+			color: white;
+			position: absolute;
+			top: 130px;
+			left: 15%;
+			text-shadow: 4px 4px 4px #000000;
+			cursor: default;
+		}
+		span {
+		    text-decoration: underline;
+			text-shadow: none;
+		}
+		#quote1 {
+		    font-family: Ubuntu;
+			font-size: 120%;
+			font-style: italic;
+			color: white;
+			position: absolute;
+			top: 170px;
+			right: 13%;
+			text-shadow: 4px 4px 4px #000000;
+			cursor: default;
+		}
+		hr {
+		    position: absolute;
+			bottom: 15px;
+			color: white;
+			width: 10%;
+			right: 45%;
+			text-shadow: 4px 4px 4px #000000;
+		}
+		#copyright {
+		    font-family: Ubuntu;
+			position: absolute;
+			bottom:-3px;
+			left:46.3%;
+			font-size: 70%;
+			color: white;
+			font-style: italic;
+			}
+	</style>
+</head>
+<body>
+    <audio autoplay>
+        <source src="site.mp3" type="audio/ogg">
+    </audio
+    <div class="bara sus">
+	    <img id="gri" src="bara sus.jpg" alt="" style="width:100%; height:50px" >
+		<img id="rosu" src="bara sus stanga.jpg" alt="" style="width:100px; height:50px">
+		<a href="https://www.facebook.com/AskForMagy" target="_blanc"><img id="facebook" src="facebook-xxl.png" alt="" style="width:30px; height:30px"></a>
+	    <a href="https://www.youtube.com/channel/UCuqPIq51A3-uyU5rEAJi21Q/featured?view_as=subscriber" target="_blanc"><img id="youtube" src="youtube.png" alt="" style="width:20px; height:20px"></a>
+	    <img id="guitar" src="guitar.png" alt="" style="width:30px; height:30px">
+		<img id="pick" src="pick.png" alt="" style="width:20px; height:20px">
+		<img id="pick1" src="pick.png" alt="" style="width:20px; height:20px">
+		<img id="pick2" src="pick.png" alt="" style="width:20px; height:20px">
+	    <div class="butoane_meniu">
+	        <ul>
+		        <li id="home"><a href="file:///E:/SITE%20MAGY/home.html" title="HOME">HOME</a></li>
+			    <li id="despre"><a href="file:///E:/SITE%20MAGY/despre.html" title="DESPRE">DESPRE</a></li>
+			    <li id="galerie"><a href="file:///E:/SITE%20MAGY/galerie.html" title="GALERIE">GALERIE</a></li>
+			    <li id="contact"><a href="file:///E:/SITE%20MAGY/contact.html" title="CONTACT">CONTACT</a></li>
+		    </ul>
+	    </div>	
+	</div>
+	<div class="titlu">
+	    <p id="titlu">MAGY GUITAR</p>
+		<p id="quote"><i>"Guitars are fun. They look cool. They sound cool. Don't <span>YOU</span> want to play guitar?"</i></p>
+		<p id="quote1">Joe Satriani</p>
+		<p id="sub-titlu">-lectii de chitara acustica si electrica-</p>
+	</div>
+	<hr>
+	<p style="cursor:default" id="copyright">Magy Guitar - 2017</p>
+</body>
+</html>

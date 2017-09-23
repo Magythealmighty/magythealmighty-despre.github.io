@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+<head>
+    <title>Magy's Guitar Lessons</title>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <style>
+	    body {
+		    background-image: url("fundal.jpg");
+			background-repeat:no-repeat;
+            background-size: 100%;
+			background-attachment: fixed;
+            background-position: center;
+		}
+		#gri {
+		    position: absolute;
+			top: 0;
+			left: 0;
+			border-bottom: solid 1px;
+			border-bottom-color: rgba(255, 255, 255, .1);
+		}
+		#rosu {
+		    position: absolute;
+			top: 0;
+			right: 0;
+			-webkit-filter: brightness(95%)
+		}
+		#rosu:hover {
+		    -webkit-filter: brightness(100%)
+			}
+		#facebook {
+			-webkit-filter: invert(92%);
+		    position: absolute;
+			top: 10px;
+			right: 0.9%;
+		}
+		#facebook:hover {
+		    -webkit-filter: invert(100%);
+		}
+		#youtube {
+			-webkit-filter: invert(92%);
+		    position: absolute;
+			top: 14px;
+			right: 4.3%;
+		}
+		#youtube:hover {
+		    -webkit-filter: invert(100%);
+		}
+		#guitar {
+			-webkit-filter: invert(92%);
+		    position: absolute;
+			top: 10px;
+			left: 1%;
+		}
+		#guitar:hover {
+		    -webkit-filter: invert(100%);
+		}
+		#pick {
+			-webkit-filter: invert(92%);
+		    position: absolute;
+			top: 15px;
+			left: 23%;
+			transform: rotate(-45deg);
+		}
+		#pick:hover {
+		    -webkit-filter: invert(100%);
+			transform: rotate(-45deg);
+		}
+		#pick1 {
+			-webkit-filter: invert(92%);
+		    position: absolute;
+			top: 15px;
+			left: 44%;
+			transform: rotate(-45deg);
+		}
+		#pick1:hover {
+		    -webkit-filter: invert(100%);
+			transform: rotate(-45deg);
+		}
+		#pick2 {
+			-webkit-filter: invert(92%);
+		    position: absolute;
+			top: 15px;
+			left: 63%;
+			transform: rotate(-45deg);
+		}
+		#pick2:hover {
+		    -webkit-filter: invert(100%);
+			transform: rotate(-45deg);
+		}
+		ul {   
+			list-style-type:none;
+		}
+		li {
+		    float: left;
+		}
+		li a {
+		    text-decoration: none;
+			z-index: 100;
+            position: absolute;
+			padding-bottom: 17px;
+			transition: all 0.2s;
+		}
+		#galerie a {
+		    color: #B32134;
+		}
+		#home {
+		    padding-left: 10%;
+		}
+		#despre {
+		    padding-left: 30%;
+		}
+		#galerie {
+		    padding-left: 50%;
+		}
+		#contact {
+		    padding-left: 70%;
+		}
+		li a {
+		    color: white;
+			font-family: 'Ubuntu';
+			}
+		li a:hover {
+		    color: #B32134;
+			}
+		#img_sus {
+		    position: absolute;
+			top: 100px;
+			left: 42.5%;
+			border: solid rgba(255, 255, 255, .4);
+			border-radius: 200px;
+			transition: all 0.5s;
+		}
+		#img_sus:hover {
+		    border: solid rgba(255, 255, 255, .6);
+			border-radius: 10px;
+		}
+		a #smoke {
+		    position: absolute;
+			top: 57%;
+			left: 15%;
+			border: solid rgba(255, 255, 255, .4);
+			border-radius: 10px;
+			transition: all 0.5s;
+		}
+		a #island {
+		    position: absolute;
+			top: 57%;
+			right: 15%;
+			border: solid rgba(255, 255, 255, .4);
+			border-radius: 10px;
+			transition: all 0.5s;
+		}
+		a #revenge {
+		    position: absolute;
+			top: 57%;
+			right: 40%;
+			border: solid rgba(255, 255, 255, .4);
+			border-radius: 10px;
+			transition: all 0.5s;
+		}
+		a #beach {
+		    position: absolute;
+			top: 90%;
+			right: 40%;
+			border: solid rgba(255, 255, 255, .4);
+			border-radius: 10px;
+			transition: all 0.5s;
+		}
+		a #back_off {
+		    position: absolute;
+			top: 90%;
+			right: 15%;
+			border: solid rgba(255, 255, 255, .4);
+			border-radius: 10px;
+			transition: all 0.5s;
+		}
+		a #rocket {
+		    position: absolute;
+			top: 90%;
+			left: 15%;
+			border: solid rgba(255, 255, 255, .4);
+			border-radius: 10px;
+			transition: all 0.5s;
+		}
+		a #anastasia {
+		    position: absolute;
+			top: 123%;
+			left: 15%;
+			border: solid rgba(255, 255, 255, .4);
+			border-radius: 10px;
+			transition: all 0.5s;
+		}
+		a #baroque {
+		    position: absolute;
+			top: 123%;
+			right: 15%;
+			border: solid rgba(255, 255, 255, .4);
+			border-radius: 10px;
+			transition: all 0.5s;
+		}
+		a #another_time {
+		    position: absolute;
+			top: 123%;
+			right: 40%;
+			border: solid rgba(255, 255, 255, .4);
+			border-radius: 10px;
+			transition: all 0.5s;
+		}
+		hr {
+		    position: absolute;
+			bottom: -65%;
+			color: white;
+			width: 10%;
+			right: 45%;
+			text-shadow: 4px 4px 4px #000000;
+		}
+		#copyright {
+		    font-family: Ubuntu;
+			position: absolute;
+			bottom:-68%;
+			left:46.3%;
+			font-size: 70%;
+			color: white;
+			font-style: italic;
+			margin-bottom: 10px;
+			}
+		#directions {
+		    font-size: 130%;
+		    font-family: Oswald;
+			text-justify: inter-word;
+			text-shadow: 4px 4px 4px #000000;
+			color: white;
+			position: absolute;
+			bottom: -62%;
+			left: 9%
+			
+		}
+		#amp {
+		    position: absolute;
+			top: 23%;
+			left: 20%;
+			-webkit-filter: invert(69%);
+			}
+		#flyingv {
+		    position: absolute;
+			top: 23%;
+			right: 20%;
+		}
+		a:hover #anastasia {
+			border: solid rgba(255, 255, 255, .6);
+		}		
+		a:hover #another_time {
+			border: solid rgba(255, 255, 255, .6);
+		}		
+		a:hover #back_off {
+			border: solid rgba(255, 255, 255, .6);
+		}		
+		a:hover #baroque {
+			border: solid rgba(255, 255, 255, .6);
+		}		
+		a:hover #beach {
+			border: solid rgba(255, 255, 255, .6);
+		}		
+		a:hover #island {
+			border: solid rgba(255, 255, 255, .6);
+		}		
+		a:hover #revenge {
+			border: solid rgba(255, 255, 255, .6);
+		}		
+		a:hover #rocket {
+			border: solid rgba(255, 255, 255, .6);
+		}		
+		a:hover #smoke {
+			border: solid rgba(255, 255, 255, .6);
+		}
+		#play2 {
+		    position: absolute;
+			top: 132%;
+			left: 24%;
+			height: 40px;
+			width: 40px;
+			-webkit-filter: invert(100%);
+			opacity: 0;
+			transition: all 0.3s;
+			pointer-events: none;
+		}
+		.baroque:hover #play2 {
+		    transition: all 0.3s;
+		    opacity: 1;
+		}
+		#play3 {
+		    position: absolute;
+			top: 132%;
+			right: 48%;
+			height: 40px;
+			width: 40px;
+			-webkit-filter: invert(100%);
+			opacity: 0;
+			transition: all 0.3s;
+			pointer-events: none;
+		}
+		.another_time:hover #play3 {
+		    transition: all 0.3s;
+		    opacity: 1;
+		}
+		#play4 {
+		    position: absolute;
+			top: 99%;
+			right: 23%;
+			height: 40px;
+			width: 40px;
+			-webkit-filter: invert(82%);
+			opacity: 0;
+			transition: all 0.3s;
+			pointer-events: none;
+		}
+		.back_off:hover #play4 {
+		    transition: all 0.3s;
+		    opacity: 1;
+		}
+		#play5 {
+		    position: absolute;
+			top: 132%;
+			right: 23%;
+			height: 40px;
+			width: 40px;
+			-webkit-filter: invert(82%);
+			opacity: 0;
+			transition: all 0.3s;
+			pointer-events: none;
+		}
+		.baroque:hover #play5 {
+		    transition: all 0.3s;
+		    opacity: 1;
+		}
+		#play6 {
+		    position: absolute;
+			top: 99%;
+			right: 48%;
+			height: 40px;
+			width: 40px;
+			-webkit-filter: invert(82%);
+			opacity: 0;
+			transition: all 0.3s;
+			pointer-events: none;
+		}
+		.beach:hover #play6 {
+		    transition: all 0.3s;
+		    opacity: 1;
+		}
+		#play7 {
+		    position: absolute;
+			top: 66%;
+			right: 23%;
+			height: 40px;
+			width: 40px;
+			-webkit-filter: invert(82%);
+			opacity: 0;
+			transition: all 0.3s;
+			pointer-events: none;
+		}
+		.island:hover #play7 {
+		    transition: all 0.3s;
+		    opacity: 1;
+		}
+		#play8 {
+		    position: absolute;
+			top: 66%;
+			right: 48%;
+			height: 40px;
+			width: 40px;
+			-webkit-filter: invert(82%);
+			opacity: 0;
+			transition: all 0.3s;
+			pointer-events: none;
+		}
+		.revenge:hover #play8 {
+		    transition: all 0.3s;
+		    opacity: 1;
+		}
+		#play9 {
+		    position: absolute;
+			top: 99%;
+			left: 24%;
+			height: 40px;
+			width: 40px;
+			-webkit-filter: invert(82%);
+			opacity: 0;
+			transition: all 0.3s;
+			pointer-events: none;
+		}
+		.rocket:hover #play9 {
+		    transition: all 0.3s;
+		    opacity: 1;
+		}
+		#play {
+		    position: absolute;
+			top: 66%;
+			left: 24%;
+			height: 40px;
+			width: 40px;
+			-webkit-filter: invert(82%);
+			opacity: 0;
+			transition: all 0.3s;
+			pointer-events: none;
+		}
+		.smoke:hover #play {
+		    transition: all 0.3s;
+		    opacity: 1;
+		}
+	</style>
+</head>
+<body>
+    <div class="bara_sus">
+	    <img id="gri" src="bara sus.jpg" alt="" style="width:100%; height:50px" >
+		<img id="rosu" src="bara sus stanga.jpg" alt="" style="width:100px; height:50px">
+		<a href="https://www.facebook.com/AskForMagy" target="_blanc"><img id="facebook" src="facebook-xxl.png" alt="" style="width:30px; height:30px"></a>
+	    <a href="https://www.youtube.com/channel/UCuqPIq51A3-uyU5rEAJi21Q/featured?view_as=subscriber" target="_blanc"><img id="youtube" src="youtube.png" alt="" style="width:20px; height:20px"></a>
+	    <img id="guitar" src="guitar.png" alt="" style="width:30px; height:30px">
+		<img id="pick" src="pick.png" alt="" style="width:20px; height:20px">
+		<img id="pick1" src="pick.png" alt="" style="width:20px; height:20px">
+		<img id="pick2" src="pick.png" alt="" style="width:20px; height:20px">
+	    <div class="butoane_meniu">
+	        <ul>
+		        <li id="home"><a href="file:///E:/SITE%20MAGY/home.html" title="HOME">HOME</a></li>
+			    <li id="despre"><a href="file:///E:/SITE%20MAGY/despre.html" title="DESPRE">DESPRE</a></li>
+			    <li id="galerie"><a href="file:///E:/SITE%20MAGY/galerie.html" title="GALERIE">GALERIE</a></li>
+			    <li id="contact"><a href="file:///E:/SITE%20MAGY/contact.html" title="CONTACT">CONTACT</a></li>
+		    </ul>
+	    </div>	
+	</div>
+	<div class="galerie">
+	    <img id="img_sus" src="img_sus.jpg" alt="" style="width:200px; height:200px;">
+		<img id="amp" src="amp.png" alt="" style="width:150px; height:150px;">
+		<img id="flyingv" src="flyingv.png" alt="" style="width:150px; height:150px;">
+		<div class="baroque">
+		    <a href="https://www.youtube.com/watch?v=7pr0J5uxT7U" target="_blanc"><img id="anastasia" title="Anastasia" src="anastasia.png" alt="" style="height:150px;"></a>
+		    <img id="play2" src="youtube.png" alt="">
+		</div>
+		<div class="another_time">
+		    <a href="https://www.youtube.com/watch?v=4TRmluLoVYc" target="_blanc"><img id="another_time" title="Another Time" src="another_time.png" alt="" style="height:150px;"></a>
+		    <img id="play3" src="youtube.png" alt="">
+		</div>
+		<div class="back_off">
+		    <a href="https://www.youtube.com/watch?v=MBrumFmMza0" target="_blanc"><img id="back_off" time="Back Off b*tch" src="back_off.png" alt="" style="height:150px;"></a>
+		    <img id="play4" src="youtube.png" alt="">
+		</div>
+		<div class="baroque">
+		    <a href="https://www.youtube.com/watch?v=cv2vjtC3N5k" target="_blanc"><img id="baroque" title="Baroque And Roll" src="baroque.png" alt="" style="height:150px;"></a>
+		    <img id="play5" src="youtube.png" alt="">
+		</div>
+		<div class="beach">
+		    <a href="https://www.youtube.com/watch?v=GJcTZXYk00M" target="_blanc"><img id="beach" title="The Beach" src="beach.png" alt="" style="height:150px;"></a>
+		    <img id="play6" src="youtube.png" alt="">
+		</div>
+		<div class="island">
+		    <a href="https://www.youtube.com/watch?v=DmrdAiSLOeg" target="_blanc"><img id="island" title="Island In The Sun" src="island.png" alt="" style="height:150px;"></a>
+		    <img id="play7" src="youtube.png" alt="">
+		</div>
+		<div class="revenge">
+		    <a href="https://www.youtube.com/watch?v=7pr0J5uxT7U" target="_blanc"><img id="revenge" title="Here Comes Revenge" src="revenge.png" alt="" style="height:150px;"></a>
+		    <img id="play8" src="youtube.png" alt="">
+		</div>
+		<div class="rocket">
+		    <a href="https://www.youtube.com/watch?v=iqdC7Goumog" target="_blanc"><img id="rocket" title="Rocket Queen" src="rocket.png" alt="" style="height:150px;"></a>
+		    <img id="play9" src="youtube.png" alt="">
+		</div>
+		<div class="smoke">
+		    <a href="https://www.youtube.com/watch?v=NMhkfm8dIDA" target="_blanc"><img id="smoke" title="Smoke On The Water" src="smoke.png" alt="" style="height:150px;"></a>
+		    <img id="play" src="youtube.png" alt="">
+		</div>
+	</div>
+	<p style="cursor:default" id="directions">Puteti urmari mai multe videoclipuri in care interpretez diverse cover-uri pe canalul meu de YouTube, apasand butonul din coltul drept al ecranului.</p>
+	<hr>
+	<p style="cursor:default" id="copyright">Magy Guitar - 2017</p>
+</body>
+</html>
